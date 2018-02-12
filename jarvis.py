@@ -52,7 +52,7 @@ async def ask_exit(signame):
 	exit(0)
 
 if __name__=="__main__":
-	check = ctypes.CDLL(os.path.dirname(os.path.realpath(__file__))+'/lib/cpp/libint.so')
+#	check = ctypes.CDLL(os.path.dirname(os.path.realpath(__file__))+'/lib/cpp/libint.so')
 #	asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 #	loop=asyncio.get_event_loop()
 #	for signame in ('SIGINT','SIGTERM'):
