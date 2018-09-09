@@ -7,7 +7,6 @@ import requests
 from flask import Flask, request ,Response
 import configparser
 from scripts import req
-from templates.text import TextTemplate
 
 
 #host=config['HOST']

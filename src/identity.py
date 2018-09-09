@@ -4,7 +4,6 @@ try:
     speak = pyttsx.init()
 except:
     pass
-from templates.text import TextTemplate
 
 def execute(text):
     try:
