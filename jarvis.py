@@ -46,11 +46,6 @@ def cont(text=None):
 			notify("Sorry Boss, Try again!")
 			cont()
 
-async def ask_exit(signame):
-	print("got signal "+signame)
-	loop.stop()
-	exit(0)
-
 if __name__=="__main__":
 #	check = ctypes.CDLL(os.path.dirname(os.path.realpath(__file__))+'/lib/cpp/libint.so')
 #	asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())

@@ -23,7 +23,6 @@ import subprocess
 import threading
 import youtube_dl
 import asyncio
-import pyautogui
 
 try:
     import pyttsx3 as pyttsx
@@ -187,12 +186,6 @@ def events(put,link):
             speak.say("Sorry,couldn't open")
     elif put.startswith(shutdown):
         subprocess.run("shutdown -h now",shell=True,check=True)
-
-    elif put.startswith('ct'):
-        pyautogui.hotkey(link[1],link[2],link[3])
-
-    elif put.startswith('rite'):
-        pyautogui.typewrite(link[1], interval=0.1)
 
 '''
     elif put.startswith('sync'):
