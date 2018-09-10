@@ -9,7 +9,7 @@ To try it:<br />
 <code>cd Jarvis</code>
 
 To install dependencies:<br />
-<code>python setup.py</code>
+<code>pip install -r requirements.txt</code>
 
 To open the GUI:
 <code>python gui.py</code>

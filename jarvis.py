@@ -3,18 +3,16 @@ from gui import MyFrame
 from scripts.actions import events,notify
 import pyttsx3 as pyttsx
 import speech_recognition as sr
-import socket
 import threading
 import ctypes
 import os
 import notify2
-import asyncio
-import uvloop
+# import asyncio
+# import uvloop
 import subprocess
 from scripts import req
 from multiprocessing import Process
 import functools
-import signal
 
 headers = {'''user-agent':'Chrome/53.0.2785.143'''}
 #speak=wicl.Dispatch("SAPI.SpVoice")
@@ -55,7 +53,7 @@ if __name__=="__main__":
 	while True:
 		r=sr.Recognizer()
 		with sr.Microphone() as source:
-			r.adjust_for_ambient_noise(source,duration=5)
+			r.adjust_for_ambient_noise(source,duration=1)
 			print("Say Something")
 			audio=r.listen(source)
 
