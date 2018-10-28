@@ -1,5 +1,6 @@
 from multiprocessing import Queue
 import os
+import cv2
 
 class messaging_queue():
 	def __init__():
