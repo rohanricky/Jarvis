@@ -52,7 +52,7 @@ wrapt==1.10.10
 youtube-dl==2017.12.14
 notify2==0.3.1
 uvloop==0.9.1
-flask==0.12.2
+flask==1.0
 matplotlib==2.1.1
 bokeh==0.12.13
 splinter==0.7.7
